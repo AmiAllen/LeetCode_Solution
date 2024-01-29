@@ -9,16 +9,18 @@ public class elements {
 	 
 	public boolean isAnagram(String s1,String s2)
 	{
-		//char[] c1 = s1.toCharArray();
-		//char[] c2 = s2.toCharArray();
+		char[] c1 = s1.toCharArray();
+		char[] c2 = s2.toCharArray();
 		
-		//Arrays.sort(c1);
-		//Arrays.sort(c2);
+		Arrays.sort(c1);
+		Arrays.sort(c2);
 		
-		//String s = new String(c1);
-		//String t = new String(c2);
+		String s = new String(c1);
+		String t = new String(c2);
 		
-		//return s.equals(t);
+		return s.equals(t);
+
+		//Second method using array list
 		
 		//ArrayList<Character> l1 = new ArrayList<Character>();
 		//ArrayList<Character> l2 = new ArrayList<Character>();
@@ -31,7 +33,7 @@ public class elements {
 			//l2.add(s2.charAt(i));
 		//}
 		//return l1.containsAll(l2) && l2.containsAll(l1);
-	}
+	//}
 	public static void main(String args[])
 	{
 		elements e1 = new elements();
